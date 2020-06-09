@@ -1,0 +1,57 @@
+<!-- www.jjam.de - Kreisbewegung um zwei Achsen mit JavaScript - Version 21.11.2002 -->
+<html>
+
+<head>
+	<title>Kreis 2</title>
+	<meta name="robots" content="noindex, nofollow">
+
+	<script language="JavaScript">
+		// Punkte zun�chst au�erhalb des sichtbaren Bildschirms platzieren
+		// Unterschiedliche Punktgr��e wegen Layout
+		if (document.getElementById && document.all && document.styleSheets) document.write("<style type='text/css'>div{position: absolute; left:-30px; top:-30px; font-size:130%}</style>"); // ie5+
+		else if (document.getElementById && !document.all) document.write("<style type='text/css'>div{position: absolute; left:-30px; top:-30px; font-size:200%}</style>"); //nn6+
+		else if (document.getElementById && !document.styleSheets) document.write("<style type='text/css'>div{position: absolute; left:-30px; top:-30px; font-size:200%}</style>"); // opera
+		else document.write("<style type='text/css'>div{position: absolute; left:-30px; top:-30px; font-size:20px}</style>"); // restliche Browser
+
+		// Anzahl der P�nktchen bestimmen und in div-Tags schreiben (einen mehr wg. Opera-Bug mit 0)
+
+		for (i = 0; i < 101; i=i+1) {
+			document.write("<div  style= color:#dddddd  id='P" + i + "'>.</div>");
+		}
+
+	
+		// Browserweiche (ie 5+ und nn 6+ / ie 4+ / nn 4.x)
+		var laySyntax = new Array();
+		for (i = 0; i < 101; i=i+1) {
+			if (document.getElementById) laySyntax[i] = document.getElementById("P" + i).style;
+			else if (document.all) laySyntax[i] = document.all.tags("div")[i].style;
+			else if (document.layers) laySyntax[i] = document.layers[i];
+		}
+
+		// Kreisbewegung
+		// 100 = Radius, 125/110 = Nullpunkt
+		// 0.0628 = 2*Pi/Punkteanzahl pro Kreis = 2*Pi/100
+		// = Abstand der Elemente zueinander in Radiant (rad)
+		// Diese Angaben bestimmen die Gr��e des Kreises
+
+		var alpha = 0;
+		function move() {
+			for (p = 1; p < 101; p++) {
+				laySyntax[p].left = 125 + 100 * Math.cos(alpha + 0.0628 * p) * Math.cos(alpha * 45);
+
+				laySyntax[p].top = 110 + 100 * Math.sin(alpha + 0.0628 * p);
+			}
+
+			// Winkel-Geschwindigkeit
+			alpha = alpha - 0.001;
+			setTimeout('move()', 50);
+		}
+	</script>
+
+</head>
+
+<body style="background-color: none;" onload="move()">
+
+</body>
+
+</html>
