@@ -19,21 +19,45 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
-
 </head>
 
 
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" onload="countdown(), rotation()">
+
+  <!-- cursor -->
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+
+  <a class="ml-5 mt-5 mr-3" href="./index.html"> <span style="font-size: 22pt;">DE</span> </a>
+  <!-- <a href="./index_pt.html">PT</a>-->
+  <a href="./index_en.html"><span style="font-size: 22pt;">EN</span> </a>
+
+
   <div class="col-md-4 ml-auto">
     <ul class="list-unstyled links">
       <li class="h5"><a href="#">👉 brfranzon@gmail.com </a></li>
       <li class="h5"><a href="#">&#128222; Handy: +49 0152 5542 0530 </a></li>
+
+      <!-- 
+      <a href="./Lebenslauf_Franzon.pdf" target="_blank" class="btn btn-white text-dark border-dark  mr-2">
+        Lebenslauf</a>
+
+      <a href="./Zwischenzeugnis_Franzon.pdf" target="_blank" class="btn btn-white text-dark border-dark mr-2">
+        Zwischenzeugnis</a>
+
+      <a href="./Zeugnisse_Franzon.pdf" target="_blank" class="btn btn-white text-dark border-dark">
+        Zeugnisse
+      </a>
+-->
     </ul>
   </div>
 
   <form name="countdownform">
-    <img class = "ml-5" id="globus" src="Globen/14.gif" width="52" height="52">
+
+    <img class="ml-5" id="globus" src="Globen/14.gif" width="52" height="52">
+
     <p class="ml-5 mb-0 list-unstyled links"> Die Spannung steigt. Nur noch
     </p>
     <input class="ml-5 text-muted" size="100%" name="countdowninput" style="background-color:none;border-width:0"
@@ -48,7 +72,7 @@
 
         <div class="row align-items-center justify-content-center">
           <div>
-            <iframe src="./Kreis2.html" frameBorder="0" style="height: 250px;">
+            <iframe src="./Kreis2.html" frameborder="0" marginwidth="0" marginheight="0" style="height: 250px;">
             </iframe>
 
             <h1 class="mb-5 text-primary font-weight-bold" data-aos="fade-up"> <span
@@ -67,17 +91,19 @@
     <div class="d-flex justify-content-end">
 
 
-      <div class="col-12 mt-5">
+      <div class="col-12 mt-5 descrip">
         <p class="text-justify" style="text-indent: 30px;">
 
           Ich bin Bruno Franzon und ich freue mich darauf, meine Kenntnisse und Fertigkeiten bei Ihnen einzusetzen
           und Entwicklung von individuellen Softwarelösungen mit Hilfe von Web-Technologien zu schaffen. Im Umgang mit
-          Javascript, Node.js, jQuery, CSS, HTML5, Bootstrap, EJS, und mit der Entwicklung eines RESTful-Backends mit
-          MongoDB/Mongoose habe ich  Erfahrung gesammelt.
-           Durch regelmäßige Fortbildung bin ich in der Lage
+          <span style="font-weight: bold;"> JavaScript, Node.js, jQuery, CSS, HTML5, Bootstrap, EJS,</span> und mit der
+          Entwicklung eines RESTful-Backends mit
+          MongoDB/Mongoose habe ich Erfahrung gesammelt.
+          Durch regelmäßige Fortbildung bin ich in der Lage
           meinen langlebige Webseiten auf Basis der neuesten Webtechnologien zu erstellen. Dazu gehören
-          Frontend-Technologien wie HTML5 oder CSS5, Javascript-Bibliotheken wie jQuery und Techniken wie Responsive
-          Webdesign.
+          Frontend-Technologien wie HTML5 oder CSS5, Javascript-Bibliotheken wie jQuery und Techniken wie <span
+            style="font-weight: bold;">Responsive
+            Webdesign</span>.
 
         </p>
       </div>
@@ -121,12 +147,10 @@
 
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
           <div class="feature-92912">
-
             <h2 class="heading">EJS</h2>
 
           </div>
         </div>
-
 
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
           <div class="feature-92912">
@@ -144,24 +168,20 @@
 
 
   <div class="site-section bg-left-half mb-5">
-    <div class="container block-13">
+    <div class="container">
 
       <h2 class="text-primary mb-5 font-weight-bold">Beispiele zur Anwendung der Web-Technologien</h2>
 
 
       <div class="owl-carousel nonloop-block-13">
-
-
-
         <div class="media-29101">
-
-          <img src="./images/covid.jpg" alt="covid" width="300" height="300"> 
+          <img src="./images/covid.jpg" alt="covid" width="250" height="250">
 
           <div class="card-body">
             <span class="h3">COVID-19 App
 
             </span>
-            <p class="card-text"> Anwendung für die Visualisierung von Koronadaten. Technische verwendete Tolls: 
+            <p class="card-text"> Anwendung für die Visualisierung von Koronadaten. Technische verwendete Tolls:
 
             </p>
             <ul class="items" class="d-flex justify-content-around mb-5">
@@ -188,14 +208,14 @@
         </div>
 
 
-
-
+        <!--**************************************************-->
         <div class="media-29101">
-          <img src="./images/vote.jpeg" alt="covid" width="300" height="300">
+          <img src="./images/vote.jpeg" alt="covid" width="250" height="250">
 
           <div class="card-body">
             <span class="h3"> Real time Wahl </span>
-            <p class="card-text"> Real time Wahl Anwendung. Technische verwendete Tolls: 
+            <p class="card-text"> Real time Wahl Anwendung. Technische verwendete Tolls:
+              <br> <br>
             </p>
 
             <ul class="items" class="d-flex justify-content-around mb-5">
@@ -213,33 +233,27 @@
                 <a href="https://github.com/brfranzon/-PusherRealTimeApp-" target="_blank">
                   <button type="button" class="btn h3 text-white bg-black" id="btn-code">Code</button>
                 </a>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
 
+        <!--**************************************************-->
 
         <div class="media-29101">
-          <img src="./images/ecommerce.png" alt="covid" width="300" height="300">
-
-
-
+          <img src="./images/ecommerce.png" alt="covid" width="250" height="250">
           <div class="card-body">
             <span class="h3">E-Commerce Website</span>
-            <p class="card-text">E-Commerce Admin-Seite Anwendung erstellt in Kombination mit 
+            <p class="card-text">E-Commerce Admin-Seite erstellt in Kombination mit
             </p>
+            <br>
             <ul class="items" class="d-flex justify-content-around mb-5">
-              <li>MongoDB</li>
-              <li>Express</li>
               <li>Node.js</li>
               <li>Bootstrap</li>
               <li>EJS</li>
+              <li>Javascript</li>
+              <li>MongoDB</li>
             </ul>
-
 
             <div>
 
@@ -260,21 +274,23 @@
         </div>
 
 
+        <!--**************************************************-->
         <div class="media-29101">
-          <img src="./images/fractal.png" alt="covid" width="300" height="300">
+          <img src="./images/fractal.png" alt="covid" width="250" height="250">
 
 
           <div class="card-body">
             <span class="h3"> Fraktal</span>
-            <p class="card-text">Javascript Anwendung zur Visualisierung eines Fraktalbaums. Technische verwendete Tolls: 
+            <p class="card-text">Javascript Anwendung zur Visualisierung eines Fraktalbaums. Technische verwendete
+              Tolls:
             </p>
             <ul class="items" class="d-flex justify-content-around mb-5">
               <li>Javascript</li>
               <li>CSS</li>
-               <li>Canvas.js</li>
+              <li>Canvas.js</li>
               <li>Bootstrap</li>
             </ul>
-
+            <br>
             <div>
               <div class="d-flex justify-content-end">
                 <a href="http://franzon-fraktal.rf.gd" target="_blank"> <button type="button"
@@ -300,6 +316,296 @@
 
     </div>
   </div>
+
+
+
+  <!--**************************************************-->
+  <!--**************************************************
+  <div class="bg-left-half">
+    <h2 class="text-primary mb-5 font-weight-bold"> Javascript/CSS Anwendungen</h2>
+
+    <div class="gallery">
+      <div class="box">
+        <span style="--i:1"><img src="./images/Raumschiff.png"></span>
+        <span style="--i:2"><img src="./images/clock.png"></span>
+        <span style="--i:3"><img src="./images/Wald.png"></span>
+        <span style="--i:4"><img src="./images/flex.png"></span>
+        <span style="--i:5"><img src="./images/cssvariables.png"></span>
+        <span style="--i:6"><img src="./images/websuche.png"></span>
+        <span style="--i:7"><img src="./images/canvas.png"></span>
+        <span style="--i:8"><img src="./images/BildVergleichen.png"></span>
+        <span style="--i:9"><img src="./images/scroll.png"></span>
+        <span style="--i:10"><img src="./images/Raumschiff.png"></span>
+      </div>
+    </div>
+
+  </div>
+-->
+
+  <div class="site-section bg-left-half mb-5">
+    <div class="container block-13">
+
+      <h2 class="text-primary mb-5 font-weight-bold"> Javascript/CSS Anwendungen</h2>
+
+
+      <!--<div class="owl-carousel nonloop-block-13">-->
+      <div class="nonloop-block-13">
+        <div class="media-29101">
+          <a href="https://codepen.io/brfranzon/pen/bGELeoB" target="_blank">
+            <img src="./images/Raumschiff.png" alt="covid" width="300" height="300">
+          </a>
+
+          <div class="card-body">
+            <span class="h3"> 1. Raumschiff
+
+            </span>
+
+
+            <div class="mt-3">
+              <div class="d-flex justify-content-left">
+                <a href="https://codepen.io/brfranzon/pen/bGELeoB" target="_blank">
+                  <button type="button" class="btn h3 text-white bg-black" id="btn-code">Code</button>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <!--**************************************************-->
+        <div class="media-29101">
+          <a href="https://codepen.io/brfranzon/pen/ExPZbre" target="_blank">
+            <img src="./images/clock.png" alt="covid" width="300" height="300">
+          </a>
+
+          <div class="card-body">
+            <span class="h3"> 2. Uhr Anwendung
+
+            </span>
+
+
+            <div class="mt-3">
+              <div class="d-flex justify-content-left">
+                <a href="https://codepen.io/brfranzon/pen/ExPZbre" target="_blank">
+                  <button type="button" class="btn h3 text-white bg-black" id="btn-code">Code</button>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!--**************************************************-->
+        <div class="media-29101">
+          <a href="https://codepen.io/brfranzon/pen/jOWYwNB" target="_blank"> <img src="./images/Wald.png" alt="covid"
+              width="300" height="300">
+          </a>
+
+          <div class="card-body">
+            <span class="h3"> 3. Wald
+
+            </span>
+
+
+            <div class="mt-3">
+              <div class="d-flex justify-content-left">
+                <a href="https://codepen.io/brfranzon/pen/jOWYwNB" target="_blank">
+                  <button type="button" class="btn h3 text-white bg-black" id="btn-code">Code</button>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <!--**************************************************-->
+        <div class="media-29101">
+          <a href="https://codepen.io/brfranzon/pen/gOPmvee" target="_blank">
+            <img src="./images/flex.png" alt="covid" width="300" height="300">
+          </a>
+
+          <div class="card-body">
+            <span class="h3"> 4. Flex Panel Anwendung
+
+            </span>
+
+
+            <div class="mt-3">
+              <div class="d-flex justify-content-left">
+                <a href="https://codepen.io/brfranzon/pen/gOPmvee" target="_blank">
+                  <button type="button" class="btn h3 text-white bg-black" id="btn-code">Code</button>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!--**************************************************-->
+        <div class="media-29101">
+          <a href="https://codepen.io/brfranzon/pen/rNxjKbW" target="_blank">
+            <img src="./images/cssvariables.png" alt="covid" width="300" height="300">
+          </a>
+
+          <div class="card-body">
+            <span class="h3"> 5. CSS Variabeln ändern
+
+            </span>
+
+
+            <div class="mt-3">
+              <div class="d-flex justify-content-left">
+                <a href="https://codepen.io/brfranzon/pen/rNxjKbW" target="_blank">
+                  <button type="button" class="btn h3 text-white bg-black" id="btn-code">Code</button>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <!--**************************************************-->
+        <div class="media-29101">
+          <a href="https://codepen.io/brfranzon/pen/xxZqYjO" target="_blank"> <img src="./images/websuche.png"
+              alt="covid" width="300" height="300">
+          </a>
+
+          <div class="card-body">
+            <span class="h3"> 6. Web Suche
+
+            </span>
+
+
+            <div class="mt-3">
+              <div class="d-flex justify-content-left">
+                <a href="https://codepen.io/brfranzon/pen/xxZqYjO" target="_blank">
+                  <button type="button" class="btn h3 text-white bg-black" id="btn-code">Code</button>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <!--**************************************************-->
+        <div class="media-29101">
+          <a href="https://codepen.io/brfranzon/pen/bGEWLOx" target="_blank"> <img src="./images/canvas.png" alt="covid"
+              width="300" height="300">
+          </a>
+
+          <div class="card-body">
+            <span class="h3"> 7. Zeichnen mit Canvas
+
+            </span>
+
+
+            <div class="mt-3">
+              <div class="d-flex justify-content-left">
+                <a href="https://codepen.io/brfranzon/pen/bGEWLOx" target="_blank">
+                  <button type="button" class="btn h3 text-white bg-black" id="btn-code">Code</button>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <!--**************************************************-->
+        <div class="media-29101">
+          <a href="https://codepen.io/brfranzon/pen/zYrErQp" target="_blank"> <img src="./images/BildVergleichen.png"
+              alt="covid" width="300" height="300">
+          </a>
+
+          <div class="card-body">
+            <span class="h3"> 8. Bilder Vergleichen
+
+            </span>
+
+
+            <div class="mt-3">
+              <div class="d-flex justify-content-left">
+                <a href="https://codepen.io/brfranzon/pen/zYrErQp" target="_blank">
+                  <button type="button" class="btn h3 text-white bg-black" id="btn-code">Code</button>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <!--**************************************************-->
+        <div class="media-29101">
+          <a href="https://codepen.io/brfranzon/pen/rNxJEvv" target="_blank"> <img src="./images/scroll.png" alt="covid"
+              width="300" height="300">
+          </a>
+
+          <div class="card-body">
+            <span class="h3"> 9. Slide on Scroll
+
+            </span>
+
+
+            <div class="mt-3">
+              <div class="d-flex justify-content-left">
+                <a href="https://codepen.io/brfranzon/pen/rNxJEvv" target="_blank">
+                  <button type="button" class="btn h3 text-white bg-black" id="btn-code">Code</button>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -371,11 +677,11 @@
         </div>
         <div class="col-md-8 ml-auto">
           <div class="row">
-            <div class="col-md-4 ml-auto">
+            <div class="col-md-6 ml-auto">
               <ul class="list-unstyled links">
                 <li class="h1">Kontakt: </li>
-                <li class="h3"><a href="#">brfranzon@gmail.com</a></li>
-                <li class="h3"><a href="#">WhatsApp: +49 0152 5542 0530</a></li>
+                <li class="h5"><a href="#">👉 brfranzon@gmail.com </a></li>
+                <li class="h5"><a href="#">&#128222; Handy: +49 0152 5542 0530 </a></li>
               </ul>
             </div>
 

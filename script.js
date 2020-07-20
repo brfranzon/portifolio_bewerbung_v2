@@ -60,16 +60,12 @@ function countdown() {
 }
 
 
-
-
 // Grafiken vorladen
 Grafik = new Array(15);
 for (i = 0; i < 15; i++) {
   Grafik[i] = new Image();
   Grafik[i].src = "Globen/" + i + ".gif";
 }
-
-
 
 i = 14;
 function rotation() {
@@ -78,3 +74,11 @@ function rotation() {
 
   setTimeout('rotation()', 100);
 }
+
+
+// cursor
+var cursor = document.querySelector(".cursor");
+var cursor2 = document.querySelector(".cursor2");
+document.addEventListener("mousemove",function(e){
+  cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+});

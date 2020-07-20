@@ -4,25 +4,52 @@
 <head>
 	<title>Kreis 2</title>
 	<meta name="robots" content="noindex, nofollow">
+	<style type="text/css">
+		html {
+			overflow: auto;
+			-ms-overflow-style: none;
+			/* IE 11 */
+			scrollbar-width: none;
+			/* Firefox 64 */
+		}
 
+		/* width */
+		::-webkit-scrollbar {
+			width: 30px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: white;
+		}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background-image: linear-gradient(red, yellow, blue);
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {}
+	</style>
 	<script language="JavaScript">
 		// Punkte zun�chst au�erhalb des sichtbaren Bildschirms platzieren
 		// Unterschiedliche Punktgr��e wegen Layout
-		if (document.getElementById && document.all && document.styleSheets) document.write("<style type='text/css'>div{position: absolute; left:-30px; top:-30px; font-size:130%}</style>"); // ie5+
+		if (document.getElementById && document.all && document.styleSheets)
+			document.write("<style type='text/css'>div{position: absolute; left:-30px; top:-30px; font-size:130%}</style>"); // ie5+
 		else if (document.getElementById && !document.all) document.write("<style type='text/css'>div{position: absolute; left:-30px; top:-30px; font-size:200%}</style>"); //nn6+
 		else if (document.getElementById && !document.styleSheets) document.write("<style type='text/css'>div{position: absolute; left:-30px; top:-30px; font-size:200%}</style>"); // opera
 		else document.write("<style type='text/css'>div{position: absolute; left:-30px; top:-30px; font-size:20px}</style>"); // restliche Browser
 
 		// Anzahl der P�nktchen bestimmen und in div-Tags schreiben (einen mehr wg. Opera-Bug mit 0)
 
-		for (i = 0; i < 101; i=i+1) {
-			document.write("<div  style= color:#dddddd  id='P" + i + "'>.</div>");
+		for (i = 0; i < 101; i = i + 1) {
+			document.write("<div  style=  color:#dddddd  id='P" + i + "'>.</div>");
 		}
 
-	
+
 		// Browserweiche (ie 5+ und nn 6+ / ie 4+ / nn 4.x)
 		var laySyntax = new Array();
-		for (i = 0; i < 101; i=i+1) {
+		for (i = 0; i < 101; i = i + 1) {
 			if (document.getElementById) laySyntax[i] = document.getElementById("P" + i).style;
 			else if (document.all) laySyntax[i] = document.all.tags("div")[i].style;
 			else if (document.layers) laySyntax[i] = document.layers[i];
@@ -50,7 +77,12 @@
 
 </head>
 
-<body style="background-color: none;" onload="move()">
+<body style="background-color:none;" onload="move()">
+
+	<div>
+
+
+	</div>
 
 </body>
 
